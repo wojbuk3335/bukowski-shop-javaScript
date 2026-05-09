@@ -10,7 +10,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="./src/css/style.css"/>
     </head>
     <body>
         <div id="container">
@@ -29,9 +29,67 @@
                         <span class="cart-counter">0</span>
                     </div>
                 </div>
+                <div>
+                    <h1>Koszyk</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Model</th>
+                                <th>Kolor</th>
+                                <th>Rozmiar</th>
+                                <th>Kod kreskowy</th>
+                                <th>Kategoria</th>
+                                <th>Podkategoria</th>
+                                <th>Dostępność</th>
+                                <th>Zdjęcie</th>
+                                <th>Cena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Antek</td>
+                                <td>Czarny</td>
+                                <td>XL</td>
+                                <td>2321321432423</td>
+                                <td>Kurtki kożuchy futra</td>
+                                <td>Kurtka skórzana męska z licówki</td>
+                                <td>Dostępny</td>
+                                <td><img src="./src/img/Antek_czarny.jpg" alt="Antek" class="table-img"></td>
+                                <td><b></b>850</td>
+                            </tr>
+                            <tr>
+                                <td>Sonia</td>
+                                <td>Czerwony</td>
+                                <td>S</td>
+                                <td>2321321432444</td>
+                                <td>Kurtki kożuchy futra</td>
+                                <td>Kurtka skórzana damska z licówki</td>
+                                <td>Dostępny</td>
+                                <td><img src="./src/img/Sonia_czerwona.jpg" alt="Sonia" class="table-img"></td>
+                                <td><b></b>990</td>
+                            </tr>
+                            <tr>
+                                <td colspan=8><b>Razem</b></td>
+                                <td><span class="price">850</span></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+
+                        </tfoot>
+                    </table>
+                </div>
             </div>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-            <script src="script.js"></script>
         </div>
+
+        <!-- Modal do powiększonego zdjęcia -->
+        <div class="modal-overlay" id="imageModal">
+            <div class="modal-content">
+                <button class="close-btn" id="closeBtn">&times;</button>
+                <img id="enlargedImage" src="" alt="">
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./src/js/script.js"></script>
     </body>
 </html>
